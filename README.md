@@ -1,4 +1,4 @@
-# Job Hunter AI: The Autonomous Career Intelligence Agent 🎯
+# Job Hunter AI: The Autonomous Career Intelligence Agent 
 
 > **Transforming the Job Search from Manual Labor to Autonomous Intelligence.**
 
@@ -6,7 +6,7 @@ Job Hunter AI is a high-performance, production-grade recruitment engine that au
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Core Philosophy](#core-philosophy)
 2. [Advanced Technical Architecture](#advanced-technical-architecture)
 3. [The Intelligence Engine (RAG)](#the-intelligence-engine-rag)
@@ -19,7 +19,7 @@ Job Hunter AI is a high-performance, production-grade recruitment engine that au
 
 ---
 
-## 🏛️ Core Philosophy
+## Core Philosophy
 The modern job market represents an information asymmetry problem. Job Hunter AI levels the playing field by applying **Agentic Reasoning** to the application process. 
 - **Zero Hallucination Policy**: Uses strict RAG to ensure every claim in an application is backed by your actual uploaded documents.
 - **Contextual Synthesis**: Dynamically maps job requirements to your most relevant achievements.
@@ -27,9 +27,9 @@ The modern job market represents an information asymmetry problem. Job Hunter AI
 
 ---
 
-## ⚙️ Advanced Technical Architecture
+## Advanced Technical Architecture
 
-### 🏗️ System Workflow Diagram
+### System Workflow Diagram
 ```mermaid
 graph TD
     A[Job Boards: Greenhouse/Lever/Etc] -->|Scrape| B(Job Discovery Pool)
@@ -49,13 +49,13 @@ graph TD
     J --> K[(Fine-Tuning Dataset)]
 ```
 
-### 🧠 The "Brain" (RAG Service)
+### The "Brain" (RAG Service)
 The system utilizes a persistent **FAISS (Facebook AI Similarity Search)** vector database to manage your professional persona.
 - **Multi-Modal Ingestion**: Simultaneously parses PDF CVs, Markdown Portfolios, and Plain-text GitHub project summaries.
 - **Recursive Character Splitting**: Optimizes document chunks (500 tokens) to ensure precise semantic retrieval of achievements.
 - **Contextual Retrieval**: When an application asks "Describe your experience with ETL," the brain retrieves the exact 5 most relevant segments of your history to construct the answer.
 
-### 🤖 The Agent (Application Agent)
+### The Agent (Application Agent)
 Powered by **Playwright**, the agent handles:
 - **Dynamic DOM Parsing**: Uses LLMs to "see" the webpage and map input fields (Text, Select, Radio) to candidate data points.
 - **Smart Form Filling**: Intelligently identifies "Tricky" questions (e.g., diversity surveys, salary expectations) and answers them based on configured preferences.
@@ -63,18 +63,18 @@ Powered by **Playwright**, the agent handles:
 
 ---
 
-## 📡 Live Mission Control Dashboard
+## Live Mission Control Dashboard
 Built with **Streamlit**, the dashboard is your high-fidelity "Command Center" for the agent.
 
-- **🏠 Command Center**: Real-time stats on jobs discovered, ranked, and applied.
-- **🧠 RAG Intelligence**: A simulator to test exactly how the AI will answer specific questions using your CV context.
-- **📡 Live Mission Control**: A non-technical, visual feed of the AI's "brain activity"—including a live chart of AI suitability scores as it evaluates roles.
-- **📄 Applications Tracker**: Track every success and failure with detailed reasonings (e.g., `captcha`, `validation_error`).
-- **📝 Document Generator**: Instantly generate tailored ATS-optimized resumes and cover letters for a specific JD on-demand.
+- ** Command Center**: Real-time stats on jobs discovered, ranked, and applied.
+- ** RAG Intelligence**: A simulator to test exactly how the AI will answer specific questions using your CV context.
+- ** Live Mission Control**: A non-technical, visual feed of the AI's "brain activity"—including a live chart of AI suitability scores as it evaluates roles.
+- ** Applications Tracker**: Track every success and failure with detailed reasonings (e.g., `captcha`, `validation_error`).
+- ** Document Generator**: Instantly generate tailored ATS-optimized resumes and cover letters for a specific JD on-demand.
 
 ---
 
-## 🔄 Autonomous Agentic Workflow
+## Autonomous Agentic Workflow
 
 1. **Discovery**: Scrapes Greenhouse, Lever, Workday, and other sources for roles matching your keywords.
 2. **AI Ranking**: GPT-4o-mini evaluates the Job Description against your persona, assigning a score from 0-100.
@@ -84,14 +84,14 @@ Built with **Streamlit**, the dashboard is your high-fidelity "Command Center" f
 
 ---
 
-## 📈 Self-Learning & Fine-Tuning
+## Self-Learning & Fine-Tuning
 Every time the agent answers a form question, it logs the **Prompt + Context + Response** into a `finetuning_dataset.jsonl` file.
 - **Automatic Data Collection**: Builds a high-quality dataset of your unique application style.
 - **Self-Optimization**: This data can be used to fine-tune a custom GPT model, making the agent faster, cheaper, and 100% aligned with your personal "professional voice" over time.
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Python 3.11 or higher
@@ -116,7 +116,7 @@ playwright install chromium
 
 ---
 
-## 🚀 Usage Guide
+## Usage Guide
 
 ### 1. Launch the Live Dashboard
 ```bash
@@ -134,7 +134,7 @@ Simply drop your latest CV, Portfolio links, or Project descriptions into the `d
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```bash
 ├── app/
 │   ├── agents/          # Agent logic (Ranking, Application, Document Gen)
