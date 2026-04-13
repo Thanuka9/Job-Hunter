@@ -173,7 +173,7 @@ with st.sidebar:
         "⚙️ Settings",
     ])
     st.markdown("---")
-    st.markdown("**Candidate:** Thanuka Ellepola")
+    st.markdown("**Candidate:** the candidate ")
     st.markdown("**Mode:** `draft_only`")
     st.caption("v0.1 — Phase 1 MVP")
 
@@ -246,10 +246,10 @@ elif "👤 Candidate Profile" in page:
         <div class="metric-card" style="text-align:left">
             <div style="font-size:3rem; text-align:center">👨‍💻</div>
             <hr style="border-color:#2a3050">
-            <p><b>Name:</b> Thanuka Ellepola</p>
-            <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/" target="_blank">View Profile</a></p>
-            <p><b>GitHub:</b> <a href="https://github.com/Thanuka9" target="_blank">Thanuka9</a></p>
-            <p><b>Portfolio:</b> <a href="https://thanukaellepola.careers/" target="_blank">thanukaellepola.careers</a></p>
+            <p><b>Name:</b> the candidate </p>
+            <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/the candidate--a559b01aa/" target="_blank">View Profile</a></p>
+            <p><b>GitHub:</b> <a href="https://github.com/the candidate9" target="_blank">the candidate9</a></p>
+            <p><b>Portfolio:</b> <a href="https://the candidate.careers/" target="_blank">the candidate.careers</a></p>
         </div>""", unsafe_allow_html=True)
 
     with col2:
@@ -417,7 +417,7 @@ elif "🧠 RAG Intelligence" in page:
             st.success("✅ FAISS Vector Index Loaded")
             st.metric("Document Chunks Vectorized", len(rag.vector_store.docstore._dict))
         else:
-            st.warning("⚠️ FAISS Vector Index not initialized. Does Thanuka Ellepola CV.pdf exist in the root?")
+            st.warning("⚠️ FAISS Vector Index not initialized. Does the candidate  CV.pdf exist in the root?")
             
         st.markdown("### 🧪 Simulator")
         test_q = st.text_area("Simulate an Application Form Question / Field:", "Describe a time you used Python for Data Engineering.")

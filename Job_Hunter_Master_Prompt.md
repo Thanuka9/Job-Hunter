@@ -1,8 +1,8 @@
 # Job Hunter AI Agent — Full Project Master Prompt and Build Specification
 
-**Project Root:** `D:\Job Hunter`  
-**Owner:** Thanuka Ellepola  
-**Primary Goal:** Build a semi-autonomous AI career agent that discovers suitable jobs, ranks them against Thanuka’s profile, generates tailored application materials, fills applications, uploads required documents, and either submits automatically where allowed or stops for final human approval on high-risk platforms.
+**Project Root:** `.`  
+**Owner:** Your Name  
+**Primary Goal:** Build a semi-autonomous AI career agent that discovers suitable jobs, ranks them against the candidate profile, generates tailored application materials, fills applications, uploads required documents, and either submits automatically where allowed or stops for final human approval.
 
 ---
 
@@ -11,7 +11,7 @@
 Create a production-grade AI agent system that can:
 
 - search job opportunities across multiple job sources
-- understand Thanuka’s background from CV, portfolio, GitHub, local reports, and supporting files
+- understand the candidate's background from CV, portfolio, GitHub, local reports, and supporting files
 - match jobs against real skills and experience
 - tailor resumes and cover letters per role
 - answer common job application questions
@@ -32,14 +32,14 @@ This project must be designed as a **hybrid autonomous agent**:
 Use the following candidate assets as the primary truth layer.
 
 ### Identity and Links
-- **Name:** Thanuka Ellepola
-- **Project Root:** `D:\Job Hunter`
-- **GitHub:** `https://github.com/Thanuka9`
-- **Portfolio:** `https://thanukaellepola.careers/`
-- **LinkedIn:** `https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/`
+- **Name:** [Your Name]
+- **Project Root:** `.`
+- **GitHub:** `https://github.com/yourusername`
+- **Portfolio:** `https://yourportfolio.careers/`
+- **LinkedIn:** `https://www.linkedin.com/in/yourid/`
 
 ### Core Professional Positioning
-Thanuka is positioned as:
+the candidate is positioned as:
 - AI Engineer
 - Data Scientist
 - Full-Stack Developer
@@ -798,7 +798,7 @@ Treat these as sensitive:
 - evidence bank
 
 ### Success Criteria
-- system can ingest Thanuka’s files
+- system can ingest the candidate’s files
 - build structured profile
 - store extracted facts with evidence links
 - generate a profile summary JSON
@@ -941,13 +941,13 @@ DEFAULT_TIMEZONE=Asia/Colombo
 Copy the following into the orchestrator agent configuration.
 
 ```md
-You are Job Hunter, an AI job search and application orchestration agent for Thanuka Ellepola.
+You are Job Hunter, an AI job search and application orchestration agent for the candidate .
 
 Your mission is to discover suitable jobs, evaluate fit, generate truthful application materials, and support or automate job applications safely.
 
 You must always follow these rules:
 
-1. Use Thanuka’s verified profile as the source of truth.
+1. Use the candidate’s verified profile as the source of truth.
 2. Never invent or exaggerate skills, qualifications, roles, dates, awards, or outcomes.
 3. Prefer roles aligned with AI engineering, data science, machine learning, business analytics, Python development, analytics engineering, and relevant full-stack development.
 4. Use supporting evidence from CVs, portfolio pages, GitHub repositories, and user-approved local reports.
@@ -994,7 +994,7 @@ Input:
 - local reports and supporting documents
 
 Task:
-Extract a verified candidate profile for Thanuka Ellepola.
+Extract a verified candidate profile for the candidate .
 
 Return:
 - personal summary
@@ -1031,7 +1031,7 @@ Given:
 - a job description
 - optional company information
 
-Score the job for Thanuka Ellepola.
+Score the job for the candidate .
 
 Evaluate:
 - title fit
@@ -1066,7 +1066,7 @@ Rules:
 You are a resume tailoring agent.
 
 Task:
-Create a targeted resume for Thanuka Ellepola based on a job description.
+Create a targeted resume for the candidate  based on a job description.
 
 You must:
 - keep all facts true
@@ -1092,12 +1092,12 @@ Output:
 You are a cover letter writing agent.
 
 Task:
-Write a tailored cover letter for Thanuka Ellepola.
+Write a tailored cover letter for the candidate .
 
 Requirements:
 - professional and specific
 - references real experience only
-- connect the role with Thanuka’s AI, analytics, full-stack, and business impact background where relevant
+- connect the role with the candidate’s AI, analytics, full-stack, and business impact background where relevant
 - highlight measurable outcomes when available
 - avoid generic filler
 - keep tone confident, clear, and human
@@ -1116,7 +1116,7 @@ Output:
 You are an application-answer generation agent.
 
 Task:
-Generate accurate job application answers for Thanuka Ellepola using only verified profile information.
+Generate accurate job application answers for the candidate  using only verified profile information.
 
 Requirements:
 - short, medium, and long options where relevant
@@ -1186,10 +1186,10 @@ Seed the candidate profile with the following verified starting assumptions, the
 
 ```json
 {
-  "name": "Thanuka Ellepola",
-  "portfolio_url": "https://thanukaellepola.careers/",
-  "github_url": "https://github.com/Thanuka9",
-  "linkedin_url": "https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/",
+  "name": "the candidate ",
+  "portfolio_url": "https://the candidate.careers/",
+  "github_url": "https://github.com/the candidate9",
+  "linkedin_url": "https://www.linkedin.com/in/the candidate--a559b01aa/",
   "base_location": "Sri Lanka",
   "target_roles": [
     "AI Engineer",
@@ -1272,7 +1272,7 @@ Add tests, hardening, and deployment instructions.
 
 The project is complete only when it can:
 
-- ingest Thanuka’s candidate materials from local folders
+- ingest the candidate’s candidate materials from local folders
 - build a structured candidate profile
 - discover real job postings
 - rank jobs against profile fit

@@ -72,7 +72,7 @@ class JobDiscoveryAgent:
     def __init__(self):
         self.client = httpx.Client(timeout=15, follow_redirects=True)
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; JobHunterBot/1.0; +https://thanukaellepola.careers/)",
+            "User-Agent": "Mozilla/5.0 (compatible; JobHunterBot/1.0; +https://the candidate.careers/)",
             "Accept": "application/json",
         }
 

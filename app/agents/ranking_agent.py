@@ -1,6 +1,6 @@
 """
 Ranking Agent
-Scores each discovered job against Thanuka's profile using GPT-4o.
+Scores each discovered job against the candidate's profile using GPT-4o.
 """
 
 import json
@@ -50,7 +50,7 @@ class RankingAgent:
     ]
 
     def score_job(self, job: Dict) -> Dict:
-        """Score a single job against Thanuka's profile. Returns job + scores."""
+        """Score a single job against the candidate's profile. Returns job + scores."""
         system_prompt = """
 You are a career matching expert. Score how well a job fits a candidate's profile.
 Score each dimension out of the given weight and return JSON only.

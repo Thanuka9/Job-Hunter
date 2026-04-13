@@ -101,7 +101,7 @@ Every time the agent answers a form question, it logs the **Prompt + Context + R
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/Thanuka9/Job-Hunter
+git clone https://github.com/the candidate9/Job-Hunter
 cd Job Hunter
 
 # Install dependencies
@@ -147,4 +147,4 @@ Simply drop your latest CV, Portfolio links, or Project descriptions into the `d
 ```
 
 ---
-*Built with ❤️ by Thanuka Ellepola. Powering the future of autonomous career development.*
+*Built with ❤️ by Your Name. Powering the future of autonomous career development.*

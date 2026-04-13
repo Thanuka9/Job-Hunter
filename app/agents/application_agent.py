@@ -22,15 +22,15 @@ logger = logging.getLogger("ApplicationAgent")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 
 CANDIDATE_INFO = {
-    "first_name":  os.getenv("CANDIDATE_FIRST_NAME", "Thanuka"),
-    "last_name":   os.getenv("CANDIDATE_LAST_NAME",  "Ellepola"),
-    "email":       os.getenv("CANDIDATE_EMAIL",       "Thanuka.ellepola@gmail.com"),
+    "first_name":  os.getenv("CANDIDATE_FIRST_NAME", "the candidate"),
+    "last_name":   os.getenv("CANDIDATE_LAST_NAME",  ""),
+    "email":       os.getenv("CANDIDATE_EMAIL",       "the candidate.@gmail.com"),
     "phone":       os.getenv("CANDIDATE_PHONE",       "+94 77 670 5832"),
-    "linkedin":    os.getenv("LINKEDIN_URL",          "https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/"),
-    "github":      os.getenv("GITHUB_URL",            "https://github.com/Thanuka9"),
-    "portfolio":   os.getenv("PORTFOLIO_URL",         "https://thanukaellepola.careers/"),
+    "linkedin":    os.getenv("LINKEDIN_URL",          "https://www.linkedin.com/in/the candidate--a559b01aa/"),
+    "github":      os.getenv("GITHUB_URL",            "https://github.com/the candidate9"),
+    "portfolio":   os.getenv("PORTFOLIO_URL",         "https://the candidate.careers/"),
     "location":    "Sri Lanka",
-    "cv_path":     os.path.abspath("Thanuka Ellepola CV.pdf"),
+    "cv_path":     os.path.abspath("the candidate  CV.pdf"),
     "salary":      os.getenv("EXPECTED_SALARY", "Open to discussion"),
     "notice":      os.getenv("NOTICE_PERIOD",   "2 weeks"),
 }
@@ -85,7 +85,7 @@ TEXTAREA_SPECIALS = {
         "I am highly motivated and confident in bringing measurable impact to your team."
     ),
     "about_me": (
-        "I am Thanuka Ellepola, an AI Engineer and Data Scientist with 7+ years of experience in "
+        "I am the candidate , an AI Engineer and Data Scientist with 7+ years of experience in "
         "healthcare analytics and full-stack development. I specialize in Python, machine learning, "
         "NLP, and scalable web applications. I have built real-world AI systems processing millions "
         "of records and am passionate about data-driven problem solving."

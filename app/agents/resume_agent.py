@@ -98,7 +98,7 @@ Rules:
 Output: Complete cover letter text. No markdown, no code blocks.
 """
         prompt = f"""
-Write a tailored cover letter for Thanuka applying to this job.
+Write a tailored cover letter for the candidate applying to this job.
 
 JOB:
 Title: {job['title']}
@@ -140,7 +140,7 @@ Return JSON with question-answer pairs.
 """
         prompt = f"""
 Generate answers to these common application questions for this job application.
-Keep answers factual and based on Thanuka's real background only.
+Keep answers factual and based on the candidate's real background only.
 
 JOB: {job['title']} at {job['company_name']}
 

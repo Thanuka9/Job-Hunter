@@ -20,7 +20,7 @@ PROJECT_ROOT = os.getenv("PROJECT_ROOT", os.getcwd())
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 GENERATED_DIR = os.path.join(PROJECT_ROOT, "generated")
 
-CV_PATH = os.path.join(PROJECT_ROOT, "Thanuka Ellepola CV.pdf")
+CV_PATH = os.path.join(PROJECT_ROOT, "the candidate  CV.pdf")
 # Fallback to older path if needed
 if not os.path.exists(CV_PATH):
-    CV_PATH = os.path.join(DATA_DIR, "cv", "Thanuka Ellepola CV.pdf")
+    CV_PATH = os.path.join(DATA_DIR, "cv", "the candidate  CV.pdf")

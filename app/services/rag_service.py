@@ -95,7 +95,7 @@ class RAGService:
         if not self.retriever:
             return "N/A"
             
-        template = """You are an AI assistant answering job application questions on behalf of Thanuka Ellepola.
+        template = """You are an AI assistant answering job application questions on behalf of the candidate .
         Use the following pieces of retrieved context from his actual CV to answer the question.
         If the answer is not in the context, use your best logical judgment based on his general profile or output "N/A".
         Keep the answer concise, professional, and directly addressing the question.
