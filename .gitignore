@@ -1,0 +1,43 @@
+# Environments & IDEs
+.env
+.venv/
+venv/
+.vscode/
+.idea/
+.gemini/
+__pycache__/
+*.py[cod]
+
+# Sensitive Personal Data (CVs, Portfolios, Exports)
+*.pdf
+*.docx
+*.doc
+data/cv/*
+data/portfolio/*
+data/github_exports/*
+data/private_reports/*
+data/certificates/*
+
+# Generated Artifacts (Resumes, Cover Letters, Screenshots, Logs)
+generated/
+logs/
+*.log
+*.png
+*.jpg
+*.jpeg
+*.json
+*.jsonl
+!app/config/*.json
+
+# Data & Databases
+*.db
+data/faiss_index/
+job_hunter.db
+
+# Keep project structure but ignore contents
+data/cv/.gitkeep
+data/portfolio/.gitkeep
+generated/logs/.gitkeep
+generated/resumes/.gitkeep
+generated/cover_letters/.gitkeep
+generated/screenshots/.gitkeep
