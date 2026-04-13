@@ -147,4 +147,4 @@ Simply drop your latest CV, Portfolio links, or Project descriptions into the `d
 ```
 
 ---
-*Built with ❤️ by Your Name. Powering the future of autonomous career development.*
+*Built with ❤️ by Thanuka. Powering the future of autonomous career development.*
